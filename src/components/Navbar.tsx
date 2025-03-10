@@ -30,31 +30,31 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <nav className={`bg-transparent shadow-md p-4 fixed w-full top-0 z-10 duration-300 ${
-      isScrolled || isHovered ? "bg-white shadow-lg" : "bg-transparent"
-    }`}
-    onMouseEnter={() => setIsHovered(true)}
-    onMouseLeave={() => setIsHovered(false)}
+    <nav className={`bg-transparent shadow-md p-4 fixed w-full top-0 z-10 duration-300 ${isScrolled || isHovered ? "bg-primary shadow-lg" : "bg-transparent"
+      }`}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
       <div className="container mx-auto flex justify-between items-center">
-        <Link to="/" className="text-2xl font-bold">Logo</Link>
+        <Link to="/" className="text-2xl font-bold text-white">Logo</Link>
         <button onClick={() => setOpen(!open)} className="md:hidden">
           ☰
         </button>
         <div className={`md:flex space-x-6 absolute md:static w-full md:w-auto transition-all ${open ? "block" : "hidden"}`}>
-          <ul className="md:flex space-x-6 absolute md:static w-full md:w-auto transition-all">
-            <li><Link to="/" className="block py-2 px-4">{t('nav.home')}</Link></li>
+          <ul className="md:flex space-x-6 absolute md:static w-full md:w-auto transition-all text-white">
+            <li><Link to="/" className="block py-2 px-4 ">{t('nav.home')}</Link></li>
             <li><Link to="/about" className="block py-2 px-4">{t('nav.about')}</Link></li>
             <li><Link to="/contact" className="block py-2 px-4">{t('nav.contact')}</Link></li>
           </ul>
           <SearchButton />
-          <div className="relative md:flex items-center ">
+          <div className="relative md:flex items-center cursor-pointer"
+            onClick={toogleDropdown}
+          >
             <GlobeAltIcon
-              className="h-6 w-6 text-gray-500 cursor-pointer"
-              onClick={toogleDropdown}
+              className="h-6 w-6 text-white cursor-pointer"
             />
             {/* display language here */}
-            <span className="ml-0.5">{language === 'en' ? 'EN' : 'ລາວ'}</span>
+            <span className="ml-0.5 text-white">{language === 'en' ? 'EN' : 'ລາວ'}</span>
             {/* Dropdown Menu */}
             {isDropdownOpen && (
               <div className="absolute top-4 right-0 mt-2 w-40 bg-white border border-amber-50 rounded shadow-lg z-10">
