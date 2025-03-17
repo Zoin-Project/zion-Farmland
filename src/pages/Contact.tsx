@@ -2,6 +2,7 @@ import MainLayout from "../layouts/MainLayout";
 import BannerImage from "../assets/images/contactus.avif";
 import VectorsImage from '../assets/images/vectors.png'
 import { EnvelopeIcon, PhoneArrowUpRightIcon, GlobeAsiaAustraliaIcon } from "@heroicons/react/24/outline";
+import { IoLogoWhatsapp, IoLogoWechat, IoLogoFacebook, IoLogoTiktok } from "react-icons/io5";
 
 const Contact = () => {
   return (
@@ -49,39 +50,56 @@ const Contact = () => {
           </div>
           <h4 className="text-lg font-semibold mt-4">Contact via Internet</h4>
           <div className="flex justify-center space-x-2">
-                <a href="" className="text-blue-600 mt-1">Facebook</a>
-                <a href="" className="text-blue-600 mt-1">Whatsapp</a>
-                <a href="" className="text-blue-600 mt-1">Wechat</a>
-              </div>
+            <a href="" className="text-blue-600 mt-1">Facebook</a>
+            <a href="" className="text-blue-600 mt-1">Whatsapp</a>
+            <a href="" className="text-blue-600 mt-1">Wechat</a>
+          </div>
           <BottomGradient />
         </div>
       </div>
       <div className="container mx-auto py-6 grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
         <div className="border border-gray-300 rounded-lg p-10 bg-gray-50">
-          <h1 className="font-bold text-3xl underline text-[#333]">Contact Infomation</h1>
-          <div className="py-6 flex gap-2">
-            <div className="relative group/btn bg-white p-6 rounded-lg shadow-md text-center">
-              <div className="flex justify-center text-indigo-600 text-4xl">
-                <GlobeAsiaAustraliaIcon className="w-8 h-8" />
-              </div>
-              <h4 className="text-lg font-semibold mt-4">Contact via Internet</h4>
-              <div className="flex">
-                <a href="">Facebook</a>
-                <p className="text-gray-600 mt-1">
-                  Facebook, Whatsapp, Wechat
-                </p>
-              </div>
-              <BottomGradient />
+          <h1 className="font-bold text-3xl py-4">Connect with our office</h1>
+          <h1 className="font-bold text-2xl">Vientiane (Headquarter)</h1>
+          <div className="">
+            <div className="pt-3">
+              <h1 className="font-bold text-lg underline text-[#333]">Address</h1>
+              <p className="font-bold italic">Souphanouvong Road, Wattay Village <br />
+                Sikhottabong District <br />
+                Vientiane Capital (Laos PDR)</p>
             </div>
-            <div className="relative group/btn bg-white p-6 rounded-lg shadow-md text-center">
-              <div className="flex justify-center text-indigo-600 text-4xl">
-                <GlobeAsiaAustraliaIcon className="w-8 h-8" />
+            <div className="pt-3">
+              <h1 className="font-bold text-lg underline text-[#333]">Social Media</h1>
+              <div className="pt-3 w-full flex gap-2">
+                <div className="relative group/btn bg-white p-6 rounded-lg shadow-md text-center cursor-pointer">
+                  <div className="flex justify-center text-indigo-600 text-4xl">
+                    <IoLogoFacebook />
+                  </div>
+                  <h4 className="text-lg font-semibold mt-4">Facebook</h4>
+                  <BottomGradient />
+                </div>
+                <div className="relative group/btn bg-white p-6 rounded-lg shadow-md text-center cursor-pointer">
+                  <div className="flex justify-center text-indigo-600 text-4xl">
+                    <IoLogoWechat />
+                  </div>
+                  <h4 className="text-lg font-semibold mt-4">Wechat</h4>
+                  <BottomGradient />
+                </div>
+                <div className="relative group/btn bg-white p-6 rounded-lg shadow-md text-center cursor-pointer">
+                  <div className="flex justify-center text-indigo-600 text-4xl">
+                    <IoLogoWhatsapp />
+                  </div>
+                  <h4 className="text-lg font-semibold mt-4">Whatsapp</h4>
+                  <BottomGradient />
+                </div>
+                <div className="relative  group/btn bg-white p-6 rounded-lg shadow-md text-center">
+                  <div className="flex justify-center text-indigo-600 text-4xl">
+                    <IoLogoTiktok />
+                  </div>
+                  <h4 className="text-lg font-semibold mt-4">Tiktok</h4>
+                  <BottomGradient />
+                </div>
               </div>
-              <h4 className="text-lg font-semibold mt-4">Contact via Internet</h4>
-              <p className="text-gray-600 mt-1">
-                Facebook, Whatsapp, Wechat
-              </p>
-              <BottomGradient />
             </div>
           </div>
         </div>
