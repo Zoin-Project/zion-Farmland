@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useAppContext } from "../context/AppProvider";
 import { GlobeAltIcon } from "@heroicons/react/24/outline";
 import SearchButton from "./Button/SearchButton";
@@ -12,6 +12,7 @@ const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
+  const location = useLocation();
 
   const toogleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
@@ -29,9 +30,11 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const isHomePage = location.pathname === "/";
+
   return (
-    <nav className={`bg-transparent shadow-md p-4 fixed w-full top-0 z-10 duration-300 ${isScrolled || isHovered ? "bg-primary shadow-lg" : "bg-transparent"
-      }`}
+    <nav className={`shadow-md p-4 fixed w-full top-0 z-10 duration-300 ${isHomePage ? (isScrolled || isHovered ? "bg-primary shadow-lg" : "bg-transparent") : "bg-primary shadow-lg"}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >

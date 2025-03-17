@@ -176,12 +176,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.23.2, @babel/runtime@npm:^7.25.0":
-  version: 7.26.9
-  resolution: "@babel/runtime@npm:7.26.9"
+"@babel/runtime@npm:^7.23.2, @babel/runtime@npm:^7.25.0, @babel/runtime@npm:^7.26.10":
+  version: 7.26.10
+  resolution: "@babel/runtime@npm:7.26.10"
   dependencies:
     regenerator-runtime: ^0.14.0
-  checksum: 838492d8a925092f9ccfbd82ec183a54f430af3a4ce88fb1337a4570629202d5123bad3097a5b8df53822504d12ccb29f45c0f6842e86094f0164f17a51eec92
+  checksum: 22d2e0abb86e90de489ab16bb578db6fe2b63a88696db431198b24963749820c723f1982298cdbbea187f7b2b80fb4d98a514faf114ddb2fdc14a4b96277b955
   languageName: node
   linkType: hard
 
@@ -643,6 +643,72 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@radix-ui/react-compose-refs@npm:1.1.1":
+  version: 1.1.1
+  resolution: "@radix-ui/react-compose-refs@npm:1.1.1"
+  peerDependencies:
+    "@types/react": "*"
+    react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  checksum: 1be82f9f7fab96cc10f167a2e4f976e0135a63d473334f664c06f02af13bc5ea1994cb0505f89ed190d756cb65d57506721c030908af07e49b9e3cfd36044f33
+  languageName: node
+  linkType: hard
+
+"@radix-ui/react-label@npm:^2.1.2":
+  version: 2.1.2
+  resolution: "@radix-ui/react-label@npm:2.1.2"
+  dependencies:
+    "@radix-ui/react-primitive": 2.0.2
+  peerDependencies:
+    "@types/react": "*"
+    "@types/react-dom": "*"
+    react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+    "@types/react-dom":
+      optional: true
+  checksum: e3d159dcbf41e46aaada532ff04c792791912216eba3c41ef21fab882ea51e0c3ef495d8fa13cf09bb4fb3599afbf3fb31fd187323ce78531859537bc2f7d096
+  languageName: node
+  linkType: hard
+
+"@radix-ui/react-primitive@npm:2.0.2":
+  version: 2.0.2
+  resolution: "@radix-ui/react-primitive@npm:2.0.2"
+  dependencies:
+    "@radix-ui/react-slot": 1.1.2
+  peerDependencies:
+    "@types/react": "*"
+    "@types/react-dom": "*"
+    react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+    "@types/react-dom":
+      optional: true
+  checksum: 3a6144ed164322b1135f6f774bfd23c7c4c5340db8a1022d05c9c7ad41ba187299a4894caae634e94a1d73b5f69305318a47b41e6dc7806fb5923fa05dd39d40
+  languageName: node
+  linkType: hard
+
+"@radix-ui/react-slot@npm:1.1.2":
+  version: 1.1.2
+  resolution: "@radix-ui/react-slot@npm:1.1.2"
+  dependencies:
+    "@radix-ui/react-compose-refs": 1.1.1
+  peerDependencies:
+    "@types/react": "*"
+    react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  checksum: f341cd66b284061a5147a67f6d7b8a7337a4c076b97ce087bcb1358fa36e9714ef988cc7ea2c2ed3b6ec3f17adafd2460851b31ed8f4dd73ea22b0b11e22ab97
+  languageName: node
+  linkType: hard
+
 "@rollup/rollup-android-arm-eabi@npm:4.34.9":
   version: 4.34.9
   resolution: "@rollup/rollup-android-arm-eabi@npm:4.34.9"
@@ -773,6 +839,24 @@ __metadata:
   version: 4.34.9
   resolution: "@rollup/rollup-win32-x64-msvc@npm:4.34.9"
   conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@tabler/icons-react@npm:^3.31.0":
+  version: 3.31.0
+  resolution: "@tabler/icons-react@npm:3.31.0"
+  dependencies:
+    "@tabler/icons": 3.31.0
+  peerDependencies:
+    react: ">= 16"
+  checksum: 712e62b2ef35461c75216c58fd70e9480adbc149415710154d6dc60d81ca16323d3b7f2f0eb8f2f101b4431dd1c15a72b9722ba3cedfcb82d54401ff1aeffc7e
+  languageName: node
+  linkType: hard
+
+"@tabler/icons@npm:3.31.0":
+  version: 3.31.0
+  resolution: "@tabler/icons@npm:3.31.0"
+  checksum: 73d31d3737d9d684acd4a524796d42e6d82d312699851c1f0f5f09d948f5d3864391e6a5537fa677703976f830a7289bf10ec181d60a8c31ad202acb66d9220f
   languageName: node
   linkType: hard
 
@@ -997,6 +1081,15 @@ __metadata:
   dependencies:
     csstype: ^3.0.2
   checksum: e257e87bc3464825014523aecc700540a9da41c3c23136c03da9b2b7999251ac70ef9e594febdefeea6abe51da2475b42e5d96af6559d76f8d54bffc0b0ddacd
+  languageName: node
+  linkType: hard
+
+"@types/swiper@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "@types/swiper@npm:6.0.0"
+  dependencies:
+    swiper: "*"
+  checksum: 53688c7fd949895d24deff102679d1a1080cd876a7d493de263aff818666cfa06ccd043a8602e9ecabf581cd750815426aec544796f27d1bfa1d71b815a966e9
   languageName: node
   linkType: hard
 
@@ -1305,6 +1398,13 @@ __metadata:
   version: 3.0.0
   resolution: "chownr@npm:3.0.0"
   checksum: fd73a4bab48b79e66903fe1cafbdc208956f41ea4f856df883d0c7277b7ab29fd33ee65f93b2ec9192fc0169238f2f8307b7735d27c155821d886b84aa97aa8d
+  languageName: node
+  linkType: hard
+
+"clsx@npm:^2.1.1":
+  version: 2.1.1
+  resolution: "clsx@npm:2.1.1"
+  checksum: acd3e1ab9d8a433ecb3cc2f6a05ab95fe50b4a3cfc5ba47abb6cbf3754585fcb87b84e90c822a1f256c4198e3b41c7f6c391577ffc8678ad587fc0976b24fd57
   languageName: node
   linkType: hard
 
@@ -1789,12 +1889,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"framer-motion@npm:^12.4.10":
-  version: 12.4.10
-  resolution: "framer-motion@npm:12.4.10"
+"framer-motion@npm:^12.4.10, framer-motion@npm:^12.5.0":
+  version: 12.5.0
+  resolution: "framer-motion@npm:12.5.0"
   dependencies:
-    motion-dom: ^12.4.10
-    motion-utils: ^12.4.10
+    motion-dom: ^12.5.0
+    motion-utils: ^12.5.0
     tslib: ^2.4.0
   peerDependencies:
     "@emotion/is-prop-valid": "*"
@@ -1807,7 +1907,7 @@ __metadata:
       optional: true
     react-dom:
       optional: true
-  checksum: c5e2e3658627e37b91c0a09d0ef908dddc67028240d7b747845ecfe84bb9cadefcaab715f05e587d1baf029a3766356825aac91f0f062e92f29a0f551e59770f
+  checksum: aebf78b75000c783d12a8ae2534e62f0a5781490c0cfdf39c051b6dee2c7e11a5b8dd1077cc659e55dc24f582aa5d620c28999f3c17e17d38e49b14c6298d86b
   languageName: node
   linkType: hard
 
@@ -1968,16 +2068,16 @@ __metadata:
   linkType: hard
 
 "i18next@npm:^24.2.2":
-  version: 24.2.2
-  resolution: "i18next@npm:24.2.2"
+  version: 24.2.3
+  resolution: "i18next@npm:24.2.3"
   dependencies:
-    "@babel/runtime": ^7.23.2
+    "@babel/runtime": ^7.26.10
   peerDependencies:
     typescript: ^5
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: dc87ff61c45366a1197c9732c4b36cd20bbae3ae14b7672e5d7d3d1ec21ec1cd2edc25cbfd10dc776d2a8c24b88d123f3c32369ac4eb50ba5c8f9cbcf3c14ec9
+  checksum: e826e0267750ac51968cc7401ddeaf3f9747524e8f89f15baa8d54b5026a5272c1d7040831d9af2caea6abb06b7d088e60000c3f8b2df5a09159751cc232b151
   languageName: node
   linkType: hard
 
@@ -2455,19 +2555,40 @@ __metadata:
   languageName: node
   linkType: hard
 
-"motion-dom@npm:^12.4.10":
-  version: 12.4.10
-  resolution: "motion-dom@npm:12.4.10"
+"motion-dom@npm:^12.5.0":
+  version: 12.5.0
+  resolution: "motion-dom@npm:12.5.0"
   dependencies:
-    motion-utils: ^12.4.10
-  checksum: 6ecf64e5a41db29b228940a9d832f67f69ce4c4b23bb501ed93bb98acaa30deb6bf486cfb319bdf4f63bef5f45448605cb212ab74a819f93dcfaae9e3aeb6053
+    motion-utils: ^12.5.0
+  checksum: abe92c72fb09eba9a6071fb77aa2020d1489df31c2291f5e3ff15def091d8b2bacb8a60854c5617f40f99e70178c0407519ca846a57e48051c4f49808e0f5927
   languageName: node
   linkType: hard
 
-"motion-utils@npm:^12.4.10":
-  version: 12.4.10
-  resolution: "motion-utils@npm:12.4.10"
-  checksum: 86335d4c2332ee4215a5a78371b0b8da6d472834802ac6516a43bc237efa5659dbdebc47b64aefaaeacb779d4e8e5639c79a05099a482fc235ed0c4337c89abc
+"motion-utils@npm:^12.5.0":
+  version: 12.5.0
+  resolution: "motion-utils@npm:12.5.0"
+  checksum: 347169ab97d8b3720b363afad6c9f4e8999490d1d95c70aaa8f83333be1b8b4e11c5f25564a9809fb091160fad2184403222e5b383be1bba004243c8b47497fe
+  languageName: node
+  linkType: hard
+
+"motion@npm:^12.5.0":
+  version: 12.5.0
+  resolution: "motion@npm:12.5.0"
+  dependencies:
+    framer-motion: ^12.5.0
+    tslib: ^2.4.0
+  peerDependencies:
+    "@emotion/is-prop-valid": "*"
+    react: ^18.0.0 || ^19.0.0
+    react-dom: ^18.0.0 || ^19.0.0
+  peerDependenciesMeta:
+    "@emotion/is-prop-valid":
+      optional: true
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: a32231ea53a3f3b659630a86b40b5cd61daaa4428db06746c7aa06124c6c27ba2772a6482d652d1b4c71d2d9f01e30602eb700655f32fd1c0ccba74b1695fd8c
   languageName: node
   linkType: hard
 
@@ -2716,6 +2837,15 @@ __metadata:
     react-native:
       optional: true
   checksum: 469bed9df243a47886098eb1ec0c615140e28ad4e6f285a80c0425566e8220aaa2d78f1a1fd8bda692d3f742303e141544ba412e0c4179876048c0d163e9eac5
+  languageName: node
+  linkType: hard
+
+"react-icons@npm:^5.5.0":
+  version: 5.5.0
+  resolution: "react-icons@npm:5.5.0"
+  peerDependencies:
+    react: "*"
+  checksum: cbd74f4b7982e6e18d59798a6b578268c8eb0909d78d87bcf9b25f99b3e544fd189a76551cb5e770d17f154a60b668551aee108aaf8471309b23f7af3b2c5b07
   languageName: node
   linkType: hard
 
@@ -3052,6 +3182,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"swiper@npm:*, swiper@npm:^11.2.5":
+  version: 11.2.5
+  resolution: "swiper@npm:11.2.5"
+  checksum: 3ebc36feca44b5b4af081ffd655a8dec683f2506676f7a1ebec059e68d0415d928f2502bb2008c03e3e8e815fb4a7f087e39b5726329f6c32a5c58667e43f5e3
+  languageName: node
+  linkType: hard
+
+"tailwind-merge@npm:^3.0.2":
+  version: 3.0.2
+  resolution: "tailwind-merge@npm:3.0.2"
+  checksum: fdcf4d9e65c8767077b93de4f6296125d9a761fce1ef85715e7cadbf467973a6b1c5fd95ca3a0416013b24ecfba61d0340f201d7becd1fc1f2f771e007bd5bd3
+  languageName: node
+  linkType: hard
+
 "tailwindcss@npm:4.0.11, tailwindcss@npm:^4.0.11":
   version: 4.0.11
   resolution: "tailwindcss@npm:4.0.11"
@@ -3340,10 +3484,14 @@ __metadata:
   dependencies:
     "@eslint/js": ^9.21.0
     "@heroicons/react": ^2.2.0
+    "@radix-ui/react-label": ^2.1.2
+    "@tabler/icons-react": ^3.31.0
     "@tailwindcss/vite": ^4.0.11
     "@types/react": ^19.0.10
     "@types/react-dom": ^19.0.4
+    "@types/swiper": ^6.0.0
     "@vitejs/plugin-react": ^4.3.4
+    clsx: ^2.1.1
     eslint: ^9.21.0
     eslint-plugin-react-hooks: ^5.1.0
     eslint-plugin-react-refresh: ^0.4.19
@@ -3351,11 +3499,15 @@ __metadata:
     globals: ^15.15.0
     i18next: ^24.2.2
     i18next-browser-languagedetector: ^8.0.4
+    motion: ^12.5.0
     phosphor-react: ^1.4.1
     react: ^19.0.0
     react-dom: ^19.0.0
     react-i18next: ^15.4.1
+    react-icons: ^5.5.0
     react-router-dom: ^7.3.0
+    swiper: ^11.2.5
+    tailwind-merge: ^3.0.2
     tailwindcss: ^4.0.11
     typescript: ~5.7.2
     typescript-eslint: ^8.24.1
