@@ -20,13 +20,13 @@ interface AppProviderProps {
 
 const AppProvider: React.FC<AppProviderProps> = ({ children }) => {
   const { i18n } = useTranslation();
-  
+
   // Sidebar state
   const [isSidebarActive, setIsSidebarActive] = useState<boolean>(false);
-  
+
   // Theme state
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
-  
+
   // Language state
   const [language, setLanguage] = useState<string>(i18n.language);
 
@@ -45,8 +45,14 @@ const AppProvider: React.FC<AppProviderProps> = ({ children }) => {
 
   // Change body class to apply the correct font
   useEffect(() => {
-    document.body.classList.remove('lang-en', 'lang-la');
-    document.body.classList.add(language === 'en' ? 'lang-en' : 'lang-la');
+    document.body.classList.remove('lang-en', 'lang-la', 'lang-cn');
+    if (language === 'en') {
+      document.body.classList.add('lang-en');
+    } else if (language === 'la') {
+      document.body.classList.add('lang-la');
+    } else if (language === 'cn') {
+      document.body.classList.add('lang-cn');
+    }
   }, [language]);
 
   // Provide global state

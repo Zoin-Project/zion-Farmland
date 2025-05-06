@@ -3,7 +3,10 @@
         "Welcome": "Welcome",
         "English": "English",
         "Lao": "Lao",
+        "Chinese": "Chinese",
         "home": "Home",
+        "products": "Products",
+        "services": "Services",
         "about": "About Us",
         "contact": "Contact"
     }
